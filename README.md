@@ -1,2 +1,2 @@
 # pull-request-testing
-bump: 1
+bump: 2
