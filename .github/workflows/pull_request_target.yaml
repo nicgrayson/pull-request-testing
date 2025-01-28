@@ -51,7 +51,7 @@ jobs:
 
             Our GitHub actions pipelines require a user with write permissions to retry the failed jobs. We've sent a message to a maintainer to review your PR. Please be patient and we'll get back to you as soon as possible.
       - name: Fail if No Write Permission
-        if: steps.checkUserPermission.outputs.require-result == 'false' && steps.checkUserPermission.outputs.check-result == 'false'
+        if: steps.checkUserPermission.outputs.require-result == 'false'
         run: exit 1
 
   RunTest:
